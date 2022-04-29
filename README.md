@@ -11,6 +11,6 @@ This board can serve two purposes namely:
 1. Pedometer
 2. Air Quality Communicator
 
-The rendering of the board: 
+The first version of the board: 
 
-![image](https://user-images.githubusercontent.com/54855965/164339846-326c3a2b-410a-4946-bedb-ce8ec6b36e4e.png)
+![image](img/communicator.gif)
