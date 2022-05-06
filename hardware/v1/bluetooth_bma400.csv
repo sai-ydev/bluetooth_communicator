@@ -1,0 +1,15 @@
+Part,Value,Device,Package,Description,ARROW_PART_NUMBER,ARROW_PRICE-STOCK,AVAILABILITY,COPYRIGHT,DESCRIPTION,HEIGHT,MANUFACTURER_NAME,MANUFACTURER_PART_NUMBER,MF,MFR_NAME,MOUSER_PART_NUMBER,MOUSER_PRICE-STOCK,MP,PACKAGE,PRICE,PROD_ID,PURCHASE-URL,SF_ID,SPICEPREFIX,VALUE
+C1,0.1uF,0.1UF-0603-25V-(+80/-20%),603,0.1µF ceramic capacitors,,,,,,,,,,,,,,,,CAP-00810,,,,0.1uF
+C2,0.1uF,0.1UF-0603-25V-(+80/-20%),603,0.1µF ceramic capacitors,,,,,,,,,,,,,,,,CAP-00810,,,,0.1uF
+C3,0.1uF,0.1UF-0603-25V-(+80/-20%),603,0.1µF ceramic capacitors,,,,,,,,,,,,,,,,CAP-00810,,,,0.1uF
+D1,BLUE,LED-BLUE0603,LED-0603,Blue SMD LED,,,,,,,,,,,,,,,,DIO-08575,,,,BLUE
+IC1,BLUENRG-M2SP,BLUENRG-M2SP,BLUENRGM2SP,STMicroelectronics,BLUENRG-M2SP,https://www.arrow.com/en/products/bluenrg-m2sp/stmicroelectronics,,,STMicroelectronics,2.5mm,STMicroelectronics,BLUENRG-M2SP,,,511-BLUENRG-M2SP,https://www.mouser.co.uk/ProductDetail/STMicroelectronics/BLUENRG-M2SP?qs=%252B6g0mu59x7IAMQd6TX9bOA%3D%3D,,,,,,,,
+J1,CORTEX_DEBUG_SMD,CORTEX_DEBUG_SMD,SAMTECH_FTSH-105-01,Cortex Debug Connector - 10 pin,,,,,,,,,,,,,,,,,,,,
+J3,QWIIC,QWIIC,CONN_BM04B-SRSS-TB(LF)(SN),,,,,,,,,,,,,,,,,,,,,
+J4,,CONN_04SMD,1X04_SMD_RA_MALE,Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections,,,,,,,,,,,,,,,,CONN-09140,,PRT-12638,,
+R1,2.2k,2.2KOHM-0603-1/10W-1%,603,2.2kΩ resistor,,,,,,,,,,,,,,,,RES-08272,,,,2.2k
+R2,820,8.2KOHM-0603-1/10W-5%,603,8.2kΩ resistor,,,,,,,,,,,,,,,,RES-10646,,,R,8.2k
+R3,2.2k,2.2KOHM-0603-1/10W-1%,603,2.2kΩ resistor,,,,,,,,,,,,,,,,RES-08272,,,,2.2k
+SW1,REVERSE_SWITCH,REVERSE_SWITCH,REVERSE_TACTILE,,,,,,,,,,,,,,,,,,,,,
+U1,BME680,BME680,PSON80P300X300X100-8N,Integrated Environmental Unit Check availability,,,In Stock,, Gas,,,,,,,,,,,,,,,
+U2,LSM6DSO32TRLGA-14L_2P5X3X0P83_STM-M,LSM6DSO32TRLGA-14L_2P5X3X0P83_STM-M,LGA-14L_2P5X3X0P83_STM-M,,,,,Copyright (C) 2022 Ultra Librarian. All rights reserved.,,,,LSM6DSO32TR,,STMicroelectronics,,,,,,,,,,
