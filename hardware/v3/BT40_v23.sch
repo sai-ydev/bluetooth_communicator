@@ -3485,9 +3485,11 @@ PTH and SMD connector options available.&lt;/p&gt;
 <part name="GND7" library="Adafruit nRF52 Bluefruit Feather rev G" deviceset="SUPPLY1_GND" device="" value="GND"/>
 <part name="SW1" library="reverse_mount_sw" deviceset="REVERSE_SWITCH" device=""/>
 <part name="GND9" library="Adafruit nRF52 Bluefruit Feather rev G" deviceset="SUPPLY1_GND" device="" value="GND"/>
-<part name="U$1" library="BT40E-lib-11" deviceset="BM40-B_1" device=""/>
 <part name="U3" library="BT40F" deviceset="BT40F" device=""/>
 <part name="GND10" library="Adafruit nRF52 Bluefruit Feather rev G" deviceset="SUPPLY1_GND" device="" value="GND"/>
+<part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VIN" device=""/>
+<part name="C4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
+<part name="GND11" library="Adafruit nRF52 Bluefruit Feather rev G" deviceset="SUPPLY1_GND" device="" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -3609,6 +3611,16 @@ PTH and SMD connector options available.&lt;/p&gt;
 <instance part="GND10" gate="1" x="-50.8" y="48.26" smashed="yes">
 <attribute name="VALUE" x="-52.324" y="46.736" size="1.016" layer="96" font="vector" ratio="20"/>
 </instance>
+<instance part="SUPPLY7" gate="G$1" x="-43.18" y="160.02" smashed="yes">
+<attribute name="VALUE" x="-43.18" y="162.814" size="1.016" layer="96" font="vector" ratio="20" align="bottom-center"/>
+</instance>
+<instance part="C4" gate="G$1" x="-43.18" y="139.7" smashed="yes">
+<attribute name="NAME" x="-45.466" y="142.621" size="1.016" layer="95" font="vector" ratio="20"/>
+<attribute name="VALUE" x="-47.244" y="138.811" size="1.016" layer="96" font="vector" ratio="20"/>
+</instance>
+<instance part="GND11" gate="1" x="-43.18" y="127" smashed="yes">
+<attribute name="VALUE" x="-44.704" y="125.476" size="1.016" layer="96" font="vector" ratio="20"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3715,6 +3727,11 @@ PTH and SMD connector options available.&lt;/p&gt;
 <wire x1="-63.5" y1="58.42" x2="-50.8" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-50.8" y="58.42"/>
 </segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="-43.18" y1="137.16" x2="-43.18" y2="129.54" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -3818,6 +3835,15 @@ PTH and SMD connector options available.&lt;/p&gt;
 <wire x1="184.912" y1="129.032" x2="241.3" y2="129.032" width="0.1524" layer="91"/>
 <junction x="241.3" y="129.032"/>
 </segment>
+<segment>
+<pinref part="SUPPLY7" gate="G$1" pin="VIN"/>
+<wire x1="-43.18" y1="144.78" x2="-43.18" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="U3" gate="G$1" pin="VDDH"/>
+<wire x1="-43.18" y1="149.86" x2="-43.18" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="149.86" x2="-43.18" y2="149.86" width="0.1524" layer="91"/>
+<junction x="-43.18" y="149.86"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -3878,7 +3904,7 @@ PTH and SMD connector options available.&lt;/p&gt;
 <segment>
 <pinref part="U3" gate="G$1" pin="SWDCLK"/>
 <wire x1="-114.3" y1="139.7" x2="-121.92" y2="139.7" width="0.1524" layer="91"/>
-<label x="-121.92" y="139.7" size="1.778" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
+<label x="-121.92" y="139.7" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -3891,6 +3917,11 @@ PTH and SMD connector options available.&lt;/p&gt;
 <pinref part="J1" gate="G$1" pin="SWDIO/TMS"/>
 <wire x1="68.58" y1="40.64" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
 <label x="73.66" y="40.64" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SWDIO"/>
+<wire x1="-114.3" y1="137.16" x2="-121.92" y2="137.16" width="0.1524" layer="91"/>
+<label x="-121.92" y="137.16" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -3927,6 +3958,11 @@ PTH and SMD connector options available.&lt;/p&gt;
 <pinref part="J1" gate="G$1" pin="!RESET"/>
 <wire x1="68.58" y1="30.48" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
 <label x="73.66" y="30.48" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="!RESET"/>
+<wire x1="-114.3" y1="144.78" x2="-121.92" y2="144.78" width="0.1524" layer="91"/>
+<label x="-121.92" y="144.78" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="INT1" class="0">
