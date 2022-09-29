@@ -591,6 +591,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="VIN" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
+<symbol name="3.3V" urn="urn:adsk.eagle:symbol:39411/1" library_version="1">
+<description>&lt;h3&gt;3.3V Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VIN" urn="urn:adsk.eagle:component:39447/1" prefix="SUPPLY" library_version="1">
@@ -598,6 +605,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Generic voltage input supply symbol.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="VIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V" urn="urn:adsk.eagle:component:39435/1" prefix="SUPPLY" library_version="1">
+<description>&lt;h3&gt;3.3V Supply Symbol&lt;/h3&gt;
+&lt;p&gt;Power supply symbol for a specifically-stated 3.3V source.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -3490,6 +3511,7 @@ PTH and SMD connector options available.&lt;/p&gt;
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VIN" device=""/>
 <part name="C4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
 <part name="GND11" library="Adafruit nRF52 Bluefruit Feather rev G" deviceset="SUPPLY1_GND" device="" value="GND"/>
+<part name="SUPPLY8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3621,6 +3643,9 @@ PTH and SMD connector options available.&lt;/p&gt;
 <instance part="GND11" gate="1" x="-43.18" y="127" smashed="yes">
 <attribute name="VALUE" x="-44.704" y="125.476" size="1.016" layer="96" font="vector" ratio="20"/>
 </instance>
+<instance part="SUPPLY8" gate="G$1" x="-50.8" y="160.02" smashed="yes">
+<attribute name="VALUE" x="-50.8" y="162.814" size="1.016" layer="96" font="vector" ratio="20" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3657,11 +3682,15 @@ PTH and SMD connector options available.&lt;/p&gt;
 <pinref part="J1" gate="G$1" pin="GND@5"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="35.56" y1="35.56" x2="25.4" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="35.56" x2="25.4" y2="24.13" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="35.56" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="GND@3"/>
+<wire x1="25.4" y1="30.48" x2="25.4" y2="24.13" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="38.1" x2="25.4" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="38.1" x2="25.4" y2="35.56" width="0.1524" layer="91"/>
 <junction x="25.4" y="35.56"/>
+<pinref part="J1" gate="G$1" pin="GNDDTCT"/>
+<wire x1="35.56" y1="30.48" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
+<junction x="25.4" y="30.48"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -3757,6 +3786,11 @@ PTH and SMD connector options available.&lt;/p&gt;
 <pinref part="U2" gate="A" pin="SCL"/>
 <wire x1="228.6" y1="116.84" x2="233.68" y2="116.84" width="0.1524" layer="91"/>
 <label x="233.68" y="116.84" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="P1.03"/>
+<wire x1="-63.5" y1="111.76" x2="-55.88" y2="111.76" width="0.1524" layer="91"/>
+<label x="-55.88" y="111.76" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -3870,6 +3904,11 @@ PTH and SMD connector options available.&lt;/p&gt;
 <wire x1="228.6" y1="119.38" x2="233.68" y2="119.38" width="0.1524" layer="91"/>
 <label x="233.68" y="119.38" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="P1.02"/>
+<wire x1="-63.5" y1="114.3" x2="-55.88" y2="114.3" width="0.1524" layer="91"/>
+<label x="-55.88" y="114.3" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
+</segment>
 </net>
 <net name="TEST" class="0">
 <segment>
@@ -3935,6 +3974,11 @@ PTH and SMD connector options available.&lt;/p&gt;
 <wire x1="101.6" y1="30.48" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
 <label x="111.76" y="30.48" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="P0.20"/>
+<wire x1="-63.5" y1="137.16" x2="-58.42" y2="137.16" width="0.1524" layer="91"/>
+<label x="-58.42" y="137.16" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
+</segment>
 </net>
 <net name="RX" class="0">
 <segment>
@@ -3946,6 +3990,11 @@ PTH and SMD connector options available.&lt;/p&gt;
 <pinref part="J4" gate="G$1" pin="SCL"/>
 <wire x1="101.6" y1="33.02" x2="111.76" y2="33.02" width="0.1524" layer="91"/>
 <label x="111.76" y="33.02" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="P0.22"/>
+<wire x1="-63.5" y1="134.62" x2="-58.42" y2="134.62" width="0.1524" layer="91"/>
+<label x="-58.42" y="134.62" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
 </segment>
 </net>
 <net name="NRST" class="0">
@@ -4004,6 +4053,26 @@ PTH and SMD connector options available.&lt;/p&gt;
 <pinref part="IC1" gate="G$1" pin="DIO7/BOOT"/>
 <wire x1="38.1" y1="119.38" x2="33.02" y2="119.38" width="0.1524" layer="91"/>
 <label x="33.02" y="119.38" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="VDD"/>
+<pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
+<wire x1="-63.5" y1="152.4" x2="-50.8" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="152.4" x2="-50.8" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SWO" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="SWO/TDO"/>
+<wire x1="68.58" y1="35.56" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
+<label x="73.66" y="35.56" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="P0.11"/>
+<wire x1="-63.5" y1="144.78" x2="-58.42" y2="144.78" width="0.1524" layer="91"/>
+<label x="-58.42" y="144.78" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
 </segment>
 </net>
 </nets>
