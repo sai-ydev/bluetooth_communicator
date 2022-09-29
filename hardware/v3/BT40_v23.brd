@@ -1672,6 +1672,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="-11.0998" y1="8.1534" x2="-11.5062" y2="7.747" width="0.254" layer="16"/>
 <wire x1="-11.5062" y1="7.747" x2="-14.5542" y2="7.747" width="0.254" layer="16"/>
 <wire x1="-14.5542" y1="7.747" x2="-15.2654" y2="7.0358" width="0.254" layer="16"/>
+<contactref element="U3" pad="15"/>
+<wire x1="-20.4216" y1="-12.9794" x2="-56" y2="-42.17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SWDIO">
 <contactref element="IC1" pad="13"/>
@@ -1860,9 +1862,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="VBUS">
 <contactref element="U3" pad="F6"/>
-</signal>
-<signal name="N$2">
-<contactref element="U3" pad="15"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

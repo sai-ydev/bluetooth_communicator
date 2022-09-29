@@ -3875,6 +3875,11 @@ PTH and SMD connector options available.&lt;/p&gt;
 <wire x1="68.58" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
 <label x="73.66" y="38.1" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SWDCLK"/>
+<wire x1="-114.3" y1="139.7" x2="-121.92" y2="139.7" width="0.1524" layer="91"/>
+<label x="-121.92" y="139.7" size="1.778" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SWDIO" class="0">
 <segment>
@@ -3963,12 +3968,6 @@ PTH and SMD connector options available.&lt;/p&gt;
 <pinref part="IC1" gate="G$1" pin="DIO7/BOOT"/>
 <wire x1="38.1" y1="119.38" x2="33.02" y2="119.38" width="0.1524" layer="91"/>
 <label x="33.02" y="119.38" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="SWDCLK"/>
-<wire x1="-114.3" y1="139.7" x2="-121.92" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
