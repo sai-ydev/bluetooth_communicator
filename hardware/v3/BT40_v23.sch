@@ -232,130 +232,6 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SamacSys_Parts">
-<description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="BLUENRGM2SP">
-<description>&lt;b&gt;BLUENRG-M2SP-3&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-6.75" y="1.27" dx="1.2" dy="1" layer="1"/>
-<smd name="2" x="-6.75" y="0" dx="1.2" dy="1" layer="1"/>
-<smd name="3" x="-6.75" y="-1.27" dx="1.2" dy="1" layer="1"/>
-<smd name="4" x="-6.75" y="-2.54" dx="1.2" dy="1" layer="1"/>
-<smd name="5" x="-6.75" y="-3.81" dx="1.2" dy="1" layer="1"/>
-<smd name="6" x="-5.29" y="-4.81" dx="1.2" dy="1" layer="1" rot="R90"/>
-<smd name="7" x="-4.02" y="-4.81" dx="1.2" dy="1" layer="1" rot="R90"/>
-<smd name="8" x="-2.75" y="-4.81" dx="1.2" dy="1" layer="1" rot="R90"/>
-<smd name="9" x="-1.48" y="-4.81" dx="1.2" dy="1" layer="1" rot="R90"/>
-<smd name="10" x="-0.21" y="-4.81" dx="1.2" dy="1" layer="1" rot="R90"/>
-<smd name="11" x="1.06" y="-4.81" dx="1.2" dy="1" layer="1" rot="R90"/>
-<smd name="12" x="2.33" y="-4.81" dx="1.2" dy="1" layer="1" rot="R90"/>
-<smd name="13" x="3.6" y="-4.81" dx="1.2" dy="1" layer="1" rot="R90"/>
-<smd name="14" x="4.87" y="-4.81" dx="1.2" dy="1" layer="1" rot="R90"/>
-<smd name="15" x="6.75" y="-3.81" dx="1.2" dy="1" layer="1"/>
-<smd name="16" x="6.75" y="-2.54" dx="1.2" dy="1" layer="1"/>
-<smd name="17" x="6.75" y="-1.27" dx="1.2" dy="1" layer="1"/>
-<smd name="18" x="6.75" y="0" dx="1.2" dy="1" layer="1"/>
-<smd name="19" x="6.75" y="1.27" dx="1.2" dy="1" layer="1"/>
-<smd name="20" x="6.75" y="2.54" dx="1.2" dy="1" layer="1"/>
-<text x="0" y="0.64" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0.64" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-6.75" y1="6.69" x2="6.75" y2="6.69" width="0.2" layer="51"/>
-<wire x1="6.75" y1="6.69" x2="6.75" y2="-4.81" width="0.2" layer="51"/>
-<wire x1="6.75" y1="-4.81" x2="-6.75" y2="-4.81" width="0.2" layer="51"/>
-<wire x1="-6.75" y1="-4.81" x2="-6.75" y2="6.69" width="0.2" layer="51"/>
-<wire x1="-8.25" y1="7.69" x2="8.25" y2="7.69" width="0.1" layer="51"/>
-<wire x1="8.25" y1="7.69" x2="8.25" y2="-6.41" width="0.1" layer="51"/>
-<wire x1="8.25" y1="-6.41" x2="-8.25" y2="-6.41" width="0.1" layer="51"/>
-<wire x1="-8.25" y1="-6.41" x2="-8.25" y2="7.69" width="0.1" layer="51"/>
-<wire x1="-8" y1="1.27" x2="-8" y2="1.27" width="0.2" layer="21"/>
-<wire x1="-8" y1="1.27" x2="-7.8" y2="1.27" width="0.2" layer="21" curve="180"/>
-<wire x1="-7.8" y1="1.27" x2="-7.8" y2="1.27" width="0.2" layer="21"/>
-<wire x1="-7.8" y1="1.27" x2="-8" y2="1.27" width="0.2" layer="21" curve="180"/>
-<wire x1="-6.75" y1="2.69" x2="-6.75" y2="6.69" width="0.1" layer="21"/>
-<wire x1="-6.75" y1="6.69" x2="6.75" y2="6.69" width="0.1" layer="21"/>
-<wire x1="6.75" y1="6.69" x2="6.75" y2="4.19" width="0.1" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="BLUENRG-M2SP">
-<wire x1="5.08" y1="2.54" x2="40.64" y2="2.54" width="0.254" layer="94"/>
-<wire x1="40.64" y1="-25.4" x2="40.64" y2="2.54" width="0.254" layer="94"/>
-<wire x1="40.64" y1="-25.4" x2="5.08" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-25.4" width="0.254" layer="94"/>
-<text x="41.91" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="41.91" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="ADC2" x="0" y="0" length="middle"/>
-<pin name="ADC1" x="0" y="-2.54" length="middle"/>
-<pin name="DIO4" x="0" y="-5.08" length="middle"/>
-<pin name="DIO5" x="0" y="-7.62" length="middle"/>
-<pin name="VIN" x="0" y="-10.16" length="middle"/>
-<pin name="ANATEST0/DIO14" x="0" y="-12.7" length="middle"/>
-<pin name="DIO7/BOOT" x="0" y="-15.24" length="middle"/>
-<pin name="GND" x="0" y="-17.78" length="middle"/>
-<pin name="DIO6" x="0" y="-20.32" length="middle"/>
-<pin name="DIO8" x="0" y="-22.86" length="middle"/>
-<pin name="DIO11" x="45.72" y="0" length="middle" rot="R180"/>
-<pin name="DIO9" x="45.72" y="-2.54" length="middle" rot="R180"/>
-<pin name="DIO10" x="45.72" y="-5.08" length="middle" rot="R180"/>
-<pin name="ANATEST1" x="45.72" y="-7.62" length="middle" rot="R180"/>
-<pin name="DIO0" x="45.72" y="-10.16" length="middle" rot="R180"/>
-<pin name="DIO2" x="45.72" y="-12.7" length="middle" rot="R180"/>
-<pin name="DIO3" x="45.72" y="-15.24" length="middle" rot="R180"/>
-<pin name="DIO1" x="45.72" y="-17.78" length="middle" rot="R180"/>
-<pin name="RESETN" x="45.72" y="-20.32" length="middle" rot="R180"/>
-<pin name="DIO12" x="45.72" y="-22.86" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BLUENRG-M2SP" prefix="IC">
-<description>&lt;b&gt;STMicroelectronics&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://www.st.com/resource/en/datasheet/bluenrg-m2.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="BLUENRG-M2SP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BLUENRGM2SP">
-<connects>
-<connect gate="G$1" pin="ADC1" pad="2"/>
-<connect gate="G$1" pin="ADC2" pad="1"/>
-<connect gate="G$1" pin="ANATEST0/DIO14" pad="6"/>
-<connect gate="G$1" pin="ANATEST1" pad="14"/>
-<connect gate="G$1" pin="DIO0" pad="15"/>
-<connect gate="G$1" pin="DIO1" pad="18"/>
-<connect gate="G$1" pin="DIO10" pad="13"/>
-<connect gate="G$1" pin="DIO11" pad="11"/>
-<connect gate="G$1" pin="DIO12" pad="20"/>
-<connect gate="G$1" pin="DIO2" pad="16"/>
-<connect gate="G$1" pin="DIO3" pad="17"/>
-<connect gate="G$1" pin="DIO4" pad="3"/>
-<connect gate="G$1" pin="DIO5" pad="4"/>
-<connect gate="G$1" pin="DIO6" pad="9"/>
-<connect gate="G$1" pin="DIO7/BOOT" pad="7"/>
-<connect gate="G$1" pin="DIO8" pad="10"/>
-<connect gate="G$1" pin="DIO9" pad="12"/>
-<connect gate="G$1" pin="GND" pad="8"/>
-<connect gate="G$1" pin="RESETN" pad="19"/>
-<connect gate="G$1" pin="VIN" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ARROW_PART_NUMBER" value="BLUENRG-M2SP" constant="no"/>
-<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/bluenrg-m2sp/stmicroelectronics" constant="no"/>
-<attribute name="DESCRIPTION" value="STMicroelectronics" constant="no"/>
-<attribute name="HEIGHT" value="2.5mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="STMicroelectronics" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="BLUENRG-M2SP" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="511-BLUENRG-M2SP" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/STMicroelectronics/BLUENRG-M2SP?qs=%252B6g0mu59x7IAMQd6TX9bOA%3D%3D" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
 <description>&lt;h3&gt;SparkFun Capacitors&lt;/h3&gt;
 This library contains capacitors. 
@@ -3474,10 +3350,6 @@ PTH and SMD connector options available.&lt;/p&gt;
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="GND" library="Adafruit nRF52 Bluefruit Feather rev G" deviceset="SUPPLY1_GND" device="" value="GND"/>
-<part name="IC1" library="SamacSys_Parts" deviceset="BLUENRG-M2SP" device=""/>
-<part name="SUPPLY1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VIN" device=""/>
-<part name="C2" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
 <part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="8.2KOHM" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="820">
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
@@ -3522,20 +3394,6 @@ PTH and SMD connector options available.&lt;/p&gt;
 <attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
-</instance>
-<instance part="GND" gate="1" x="15.24" y="86.36" smashed="yes">
-<attribute name="VALUE" x="13.716" y="84.836" size="1.016" layer="96" font="vector" ratio="20"/>
-</instance>
-<instance part="IC1" gate="G$1" x="38.1" y="134.62" smashed="yes">
-<attribute name="NAME" x="43.434" y="138.176" size="1.016" layer="95" font="vector" ratio="20" align="center-left"/>
-<attribute name="VALUE" x="67.31" y="137.922" size="1.016" layer="96" font="vector" ratio="20" align="center-left"/>
-</instance>
-<instance part="SUPPLY1" gate="G$1" x="15.24" y="137.16" smashed="yes">
-<attribute name="VALUE" x="15.24" y="139.954" size="1.016" layer="96" font="vector" ratio="20" align="bottom-center"/>
-</instance>
-<instance part="C2" gate="G$1" x="15.24" y="111.76" smashed="yes">
-<attribute name="NAME" x="12.954" y="114.681" size="1.016" layer="95" font="vector" ratio="20"/>
-<attribute name="VALUE" x="11.176" y="110.871" size="1.016" layer="96" font="vector" ratio="20"/>
 </instance>
 <instance part="R2" gate="G$1" x="40.64" y="76.2" smashed="yes">
 <attribute name="NAME" x="36.83" y="76.454" size="1.016" layer="95" font="vector" ratio="20" align="bottom-center"/>
@@ -3652,17 +3510,6 @@ PTH and SMD connector options available.&lt;/p&gt;
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="GND" gate="1" pin="GND"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="109.22" x2="15.24" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="101.6" x2="15.24" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="101.6" x2="15.24" y2="101.6" width="0.1524" layer="91"/>
-<junction x="15.24" y="101.6"/>
-<pinref part="IC1" gate="G$1" pin="GND"/>
-<wire x1="38.1" y1="116.84" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="116.84" x2="27.94" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="60.96" y1="76.2" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
@@ -3764,11 +3611,6 @@ PTH and SMD connector options available.&lt;/p&gt;
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DIO4"/>
-<wire x1="38.1" y1="129.54" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
-<label x="30.48" y="129.54" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J3" gate="G$1" pin="4"/>
 <wire x1="177.8" y1="58.42" x2="182.88" y2="58.42" width="0.1524" layer="91"/>
 <label x="182.88" y="58.42" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
@@ -3794,15 +3636,6 @@ PTH and SMD connector options available.&lt;/p&gt;
 </segment>
 </net>
 <net name="VIN" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="VIN"/>
-<wire x1="38.1" y1="124.46" x2="15.24" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="G$1" pin="VIN"/>
-<wire x1="15.24" y1="137.16" x2="15.24" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="116.84" x2="15.24" y2="124.46" width="0.1524" layer="91"/>
-<junction x="15.24" y="124.46"/>
-</segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY6" gate="G$1" pin="VIN"/>
@@ -3881,11 +3714,6 @@ PTH and SMD connector options available.&lt;/p&gt;
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DIO5"/>
-<wire x1="38.1" y1="127" x2="30.48" y2="127" width="0.1524" layer="91"/>
-<label x="30.48" y="127" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J3" gate="G$1" pin="3"/>
 <wire x1="177.8" y1="55.88" x2="182.88" y2="55.88" width="0.1524" layer="91"/>
 <label x="182.88" y="55.88" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
@@ -3912,14 +3740,14 @@ PTH and SMD connector options available.&lt;/p&gt;
 </net>
 <net name="TEST" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="ANATEST0/DIO14"/>
-<wire x1="38.1" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
-<label x="33.02" y="121.92" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
 <label x="27.94" y="76.2" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="P0.30"/>
+<wire x1="-63.5" y1="124.46" x2="-58.42" y2="124.46" width="0.1524" layer="91"/>
+<label x="-58.42" y="124.46" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3930,11 +3758,6 @@ PTH and SMD connector options available.&lt;/p&gt;
 </segment>
 </net>
 <net name="SWCLK" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="DIO9"/>
-<wire x1="83.82" y1="132.08" x2="91.44" y2="132.08" width="0.1524" layer="91"/>
-<label x="91.44" y="132.08" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
-</segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="SWDCLK/TCK"/>
 <wire x1="68.58" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
@@ -3948,11 +3771,6 @@ PTH and SMD connector options available.&lt;/p&gt;
 </net>
 <net name="SWDIO" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DIO10"/>
-<wire x1="83.82" y1="129.54" x2="91.44" y2="129.54" width="0.1524" layer="91"/>
-<label x="91.44" y="129.54" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J1" gate="G$1" pin="SWDIO/TMS"/>
 <wire x1="68.58" y1="40.64" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
 <label x="73.66" y="40.64" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
@@ -3964,11 +3782,6 @@ PTH and SMD connector options available.&lt;/p&gt;
 </segment>
 </net>
 <net name="TX" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="DIO8"/>
-<wire x1="38.1" y1="111.76" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
-<label x="33.02" y="111.76" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="VCC"/>
 <wire x1="101.6" y1="30.48" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
@@ -3982,11 +3795,6 @@ PTH and SMD connector options available.&lt;/p&gt;
 </net>
 <net name="RX" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DIO11"/>
-<wire x1="83.82" y1="134.62" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
-<label x="91.44" y="134.62" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J4" gate="G$1" pin="SCL"/>
 <wire x1="101.6" y1="33.02" x2="111.76" y2="33.02" width="0.1524" layer="91"/>
 <label x="111.76" y="33.02" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
@@ -3998,11 +3806,6 @@ PTH and SMD connector options available.&lt;/p&gt;
 </segment>
 </net>
 <net name="NRST" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="RESETN"/>
-<wire x1="83.82" y1="114.3" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
-<label x="88.9" y="114.3" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
-</segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="!RESET"/>
 <wire x1="68.58" y1="30.48" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
@@ -4021,9 +3824,9 @@ PTH and SMD connector options available.&lt;/p&gt;
 <label x="182.88" y="111.76" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="DIO1"/>
-<wire x1="83.82" y1="116.84" x2="88.9" y2="116.84" width="0.1524" layer="91"/>
-<label x="88.9" y="116.84" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="P1.08"/>
+<wire x1="-63.5" y1="99.06" x2="-55.88" y2="99.06" width="0.1524" layer="91"/>
+<label x="-55.88" y="99.06" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
 </segment>
 </net>
 <net name="INT2" class="0">
@@ -4033,9 +3836,9 @@ PTH and SMD connector options available.&lt;/p&gt;
 <label x="233.68" y="106.68" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="DIO3"/>
-<wire x1="83.82" y1="119.38" x2="88.9" y2="119.38" width="0.1524" layer="91"/>
-<label x="88.9" y="119.38" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="P0.13/IO0"/>
+<wire x1="-114.3" y1="81.28" x2="-119.38" y2="81.28" width="0.1524" layer="91"/>
+<label x="-119.38" y="81.28" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BUTTON" class="0">
@@ -4050,9 +3853,9 @@ PTH and SMD connector options available.&lt;/p&gt;
 <label x="73.66" y="96.52" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="DIO7/BOOT"/>
-<wire x1="38.1" y1="119.38" x2="33.02" y2="119.38" width="0.1524" layer="91"/>
-<label x="33.02" y="119.38" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="P1.15"/>
+<wire x1="-63.5" y1="81.28" x2="-58.42" y2="81.28" width="0.1524" layer="91"/>
+<label x="-58.42" y="81.28" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
